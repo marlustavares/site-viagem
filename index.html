@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <title>Documento</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>Marlus Viagens</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class=" header-content ">
+            <h1>Muralha da China</h1>
+            <p>Venha conhecer esse espetáculo, garanta já sua vaga</p>
+
+            <button>Saiba Mais</button>
+        </div>
+    </header>
+
+    <section id="pacotes" class="pacotes ">
+        <h1 class="pacotes-title ">Conheça nossos pacotes </h1>
+
+        <div class="pacotes-cards ">
+            <div class="card ">
+                <div class="card-tag card-tag-top ">
+                    <p>Promoção</p>
+                </div>
+
+                <div class="card-tag card-tag-botton ">
+                    <p>R$ 1800,00</p>
+                </div>
+                <img class="card-image " src="./assets/canoa_quebrada.jpg " alt="canoa_quebrada " />
+                <div class="card-content " <h1>Venha conhecer Canoa Quebrada</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i>café incluso</li>
+                        <li><i data-feather="wifi"></i>wi-fi</li>
+                        <li><i data-feather="briefcase"></i>Pet friendly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card ">
+
+                <div class="card-tag card-tag-botton ">
+                    <p>R$ 3000,00</p>
+                </div>
+                <img class="card-image " src="./assets/foz_iguacu.jpg " alt="foz_iguacu " />
+                <div class="card-content " <h1>Visite Foz do Iguaçu</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i>café incluso</li>
+                        <li><i data-feather="wifi"></i>wi-fi</li>
+                        <li><i data-feather="briefcase"></i>Pet friendly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="card-tag card-tag-top ">
+                    <p>últimas unidades</p>
+                </div>
+
+                <div class="card-tag card-tag-botton ">
+                    <p>R$ 1600,00</p>
+                </div>
+                <img class="card-image " src="./assets/brasilia.avif " alt="brasilia " />
+                <div class="card-content " <h1>Visite a capital do Brasil: Brasília</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i>café incluso</li>
+                        <li><i data-feather="wifi"></i>wi-fi</li>
+                        <li><i data-feather="briefcase"></i>Pet friendly</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos ">
+        <h1 class="servicos-title ">Serviços</h1>
+        <div class="servicos-cards ">
+            <div class="card ">
+                <i data-feather="map"></i>
+                <div class="card-content ">
+                    <h3>tours guiados</h3>
+                    <p>são passeios ou excursões que são realizados com o auxílio de um guia, alguém que vai dar informações sobre aqueles locais visitados.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+
+            <div class="card ">
+                <i data-feather="camera"></i>
+                <div class="card-content ">
+                    <h3>Fotografia Profissional</h3>
+                    <p>É um profissional que se dedica à arte e à prática de capturar imagens por meio de uma câmera.Dessa forma vai poder tirar belas fotos de seu passeio.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+
+            <div class="card ">
+                <i data-feather="navigation"></i>
+                <div class="card-content ">
+                    <h3>Aluguel de Veículo</h3>
+                    <p>É uma modalidade de negócio que consiste em oferecer um veículo para alugar por um determinado período de tempo, normalmente algumas horas ou semanas.</p>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato ">
+        <div class="contato-info ">
+            <h1>Entre em Contato</h1>
+            <ul>
+                <li><i data-feather="map-pin"></i>Rua Castelo Branco,289</li>
+                <li><i data-feather="mail"></i>Marlusviagem@gmail.com</li>
+                <li><i data-feather="smartphone"></i>(88)9 - 9985 - 3426</li>
+            </ul>
+        </div>
+        <div class="card-contato ">
+            <img class="image-contato" src="./assets/map.jpg " alt="map " />
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        feather.replace();
+    </script>
+
+</body>
+
+</html>
